@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Sorriso Claro</title>
+<style>
+/* Página FICTÍCIA, feita de propósito com problemas de UX para uso em aula. */
+body{margin:0;font-family:Verdana,Geneva,sans-serif;font-size:12px;color:#bdbdbd;background:#fff}
+.w{max-width:980px;margin:0 auto;padding:0 12px}
+a{color:#9ec5e8;text-decoration:none}
+h1{font-size:26px;color:#1d4f91;margin:10px 0}
+h2{font-size:18px;color:#1d4f91;margin:18px 0 6px}
+p{margin:6px 0;line-height:1.4}
+
+header{background:linear-gradient(#e6f2ff,#cfe6fb)}
+.logo{font-size:20px;font-weight:700;color:#1d4f91;padding:8px 0}
+nav{display:flex;flex-wrap:wrap;gap:2px 10px;padding-bottom:8px}
+nav a{font-size:11px;color:#6a8fb5}
+
+.hero{background:#f1f8ff;padding:18px 0 22px}
+.hero p{color:#c3c3c3}
+.ctas{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.ctas button{font:inherit;font-size:12px;padding:8px 18px;border:1px solid #9ec5e8;background:#e6f2ff;color:#6a8fb5;border-radius:3px}
+
+.trat{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px}
+.trat div{border-bottom:1px solid #f0f0f0;padding:4px 0}
+.trat b{color:#9a9a9a}
+
+.form{max-width:520px;position:relative}
+.form input,.form select,.form textarea{display:block;width:100%;font:inherit;font-size:11px;color:#9a9a9a;border:1px solid #eee;padding:4px 6px;margin:0 0 3px;outline:none;background:#fff}
+.form input::placeholder,.form textarea::placeholder{color:#cacaca}
+.form textarea{height:44px}
+.btns{display:flex;justify-content:flex-end;margin-top:6px}
+.btns button{font:inherit;font-size:9px;width:42px;height:17px;padding:0;border:1px solid #cfe0f2;background:#f1f8ff;color:#9ec5e8;margin:0}
+.status{min-height:26px}
+
+footer{margin-top:30px;padding:14px 0 30px;background:#f7f7f7;font-size:10px;color:#cfcfcf}
+
+/* ---------- MODO REVELAÇÃO (tecla R) ---------- */
+.bug{position:relative}
+.bug::before{display:none}
+body.rev .bug{outline:3px dashed #e11d48;outline-offset:4px}
+body.rev .bug::before{display:block;content:attr(data-t);position:absolute;top:-15px;left:8px;z-index:50;background:#e11d48;color:#fff;font:700 12px/1.25 Arial,sans-serif;padding:3px 8px;border-radius:5px;max-width:300px}
+body.rev .bug.off{outline:none}
+body.rev .bug.off::before{display:none}
+.legend{display:none;position:fixed;right:10px;bottom:10px;z-index:99;background:#17153B;color:#fff;font:13px/1.5 Arial,sans-serif;padding:10px 14px;border-radius:10px;max-width:290px}
+body.rev .legend{display:block}
+.legend b{color:#ffd1e8}
+.legend small{display:block;margin-top:6px;color:#c9c6e8}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="w">
+    <div class="logo">🦷 CLÍNICA SORRISO CLARO</div>
+    <nav class="bug" data-b="1" data-t="① Lei de Hick: 12 itens no menu">
+      <a href="#">Início</a><a href="#">Quem somos</a><a href="#">Tratamentos</a><a href="#">Implantes</a><a href="#">Ortodontia</a><a href="#">Clareamento</a><a href="#">Convênios</a><a href="#">Equipe</a><a href="#">Blog</a><a href="#">Contato</a><a href="#">Trabalhe conosco</a><a href="#">Área do paciente</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="w">
+    <h1>BEM-VINDO À CLÍNICA SORRISO CLARO</h1>
+    <p>Somos uma clínica odontológica com mais de 15 anos de experiência, equipe de especialistas, equipamentos modernos e atendimento para toda a família, com diversas opções de tratamento e planos que atendem a diferentes necessidades e bolsos.</p>
+    <div class="ctas bug" data-b="1" data-t="① Lei de Hick: 3 botões de peso igual">
+      <button type="button">Saiba mais</button>
+      <button type="button">Ver mais</button>
+      <button type="button">Clique aqui</button>
+    </div>
+  </div>
+</section>
+
+<main class="w">
+  <h2>Nossos tratamentos</h2>
+  <div class="trat bug" data-b="5" data-t="⑤ Nielsen: linguagem técnica e “clique aqui”">
+    <div><b>Endodontia periapical</b> com obturação radicular. <a href="#">clique aqui</a></div>
+    <div><b>Profilaxia supragengival</b> e raspagem. <a href="#">clique aqui</a></div>
+    <div><b>Exodontia de terceiros molares</b> inclusos. <a href="#">clique aqui</a></div>
+    <div><b>Reabilitação oral</b> com próteses fixas. <a href="#">clique aqui</a></div>
+  </div>
+
+  <h2>Quem somos</h2>
+  <p class="bug" data-b="4" data-t="④ Acessibilidade: texto claro, pequeno e baixo contraste">Nossa missão é cuidar do sorriso de cada paciente com ética, tecnologia e carinho. Atendemos de segunda a sábado, com agendamento prévio, e aceitamos os principais convênios do mercado. Conheça nossa equipe, nossos valores e nossa história, e veja por que milhares de famílias confiam na Clínica Sorriso Claro.</p>
+
+  <h2>Agendamento</h2>
+  <p>Preencha todos os campos abaixo para agendar sua avaliação.</p>
+  <form class="form" id="f" autocomplete="off">
+    <div class="bug" data-b="3" data-t="③ Lei de Miller: 15 campos de uma vez">
+      <input placeholder="nome">
+      <input placeholder="cpf">
+      <input placeholder="rg">
+      <input placeholder="data de nascimento">
+      <input placeholder="telefone">
+      <input placeholder="whatsapp">
+      <input placeholder="e-mail">
+      <input placeholder="cep">
+      <input placeholder="rua">
+      <input placeholder="número">
+      <input placeholder="bairro">
+      <input placeholder="convênio">
+      <input placeholder="carteirinha">
+      <textarea placeholder="queixa"></textarea>
+      <input placeholder="como conheceu a clínica">
+    </div>
+    <div class="btns bug" data-b="2" data-t="② Lei de Fitts: botão minúsculo, colado em “Cancelar”">
+      <button type="submit">Agendar</button><button type="reset">Cancelar</button>
+    </div>
+    <div class="status bug" data-b="5" data-t="⑤ Nielsen: nenhuma confirmação ao enviar"></div>
+  </form>
+</main>
+
+<footer>
+  <div class="w">Clínica Sorriso Claro · (11) 0000-0000 · contato@sorrisoclaro.exemplo · CNPJ 00.000.000/0001-00<br>
+  Clínica fictícia, criada apenas para fins didáticos.</div>
+</footer>
+
+<div class="legend" id="lg">
+  <b>Modo revelação</b><br>
+  ① Lei de Hick<br>② Lei de Fitts<br>③ Lei de Miller<br>④ Acessibilidade<br>⑤ Heurísticas de Nielsen
+  <small>R: mostrar ou esconder tudo · 1 a 5: destacar um só · 0: todos</small>
+</div>
+
+<script>
+// O botão "Agendar" não mostra nenhuma confirmação, de propósito.
+document.getElementById('f').addEventListener('submit', e => e.preventDefault());
+
+// Modo revelação para o professor: R liga/desliga; 1 a 5 destaca um problema; 0 mostra todos.
+const bugs = [...document.querySelectorAll('.bug')];
+function only(n){ bugs.forEach(b => b.classList.toggle('off', n !== 0 && b.dataset.b !== String(n))); }
+document.addEventListener('keydown', e => {
+  if (e.target.matches('input,textarea,select')) return;
+  const k = e.key.toLowerCase();
+  if (k === 'r') { document.body.classList.toggle('rev'); only(0); }
+  else if (k >= '0' && k <= '5') { document.body.classList.add('rev'); only(+k); }
+});
+if (location.hash === '#revelar') document.body.classList.add('rev');
+</script>
+</body>
+</html>
